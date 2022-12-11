@@ -14,11 +14,12 @@ const navigate=useNavigate()
 function login(e,p){
   return new Promise((res,rej)=>{
     try {
-      var url = "http://azu-app.com/api/login";
+      var url = "http://azu-app.com/login";
       var xhr = new XMLHttpRequest();
   xhr.open("POST", url);
   
-  xhr.setRequestHeader("Accept", "application/json");
+  xhr.setRequestHeader("Accept", "*/*");
+  xhr.setRequestHeader("Content-Type","application/json")
    var data = `{
    "email":"${e}",
     "password":"${p}"
