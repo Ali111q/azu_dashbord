@@ -14,7 +14,7 @@ const navigate=useNavigate()
 function login(e,p){
   return new Promise((res,rej)=>{
     try {
-      var url = "http://azu-app.com/login";
+      var url = "http://home.azu-app.com/login";
       var xhr = new XMLHttpRequest();
   xhr.open("POST", url);
   
