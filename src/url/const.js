@@ -1,5 +1,5 @@
 const AppName = 'azu';
-const Url = 'http://home.azu-app.com/';
+const Url = 'http://health.azu-app.com/';
 
 const DR_addImg = `${Url}api/addPhoto`;
 const DR_addDr = `${Url}api/addDoctor`;
